@@ -1,0 +1,236 @@
+@font-face {
+  font-family: danganronpa;
+  src: url(platform_eight.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(entrada.jpg);
+  background-size: cover;
+  gap: 10px;
+  padding: 60px;
+  max-width: 100vw;
+}
+.logo {
+  width: 60%;
+  height: 30%;
+  z-index: 90;
+}
+.swiper {
+  width: 90vw;
+  height: 80vh;
+}
+.swiper-slide {
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  overflow: hidden;
+}
+.swiper-pagination,
+.swiper-scrollbar {
+  display: none;
+}
+main {
+  background-color: black;
+}
+h1,
+p,
+span {
+  color: white;
+}
+h1 {
+  font-family: danganronpa;
+  font-size: 90px;
+  text-align: center;
+}
+.part1 {
+  display: flex;
+}
+p {
+  font-size: 30px;
+  font-family: monospace;
+}
+a {
+  color: rgb(78, 192, 230);
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.card {
+  position: relative;
+  width: 90%;
+  height: 90%;
+}
+.flip {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+}
+.frente,
+.tras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px black;
+  backface-visibility: hidden;
+}
+.frente {
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+}
+.tras {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 3px solid white;
+  transition: 0.5s;
+}
+.card:hover .flip {
+  transform: rotateY(180deg);
+}
+.tras p {
+  font-size: 20px;
+  margin: 10px;
+  color: black;
+}
+.hajime_frente {
+  background-image: url(hajime.png);
+}
+.hajime_tras:hover {
+  background-color: green;
+}
+.nagito_frente {
+  background-image: url(nagito.png);
+}
+.nagito_tras:hover {
+  background-color: rgb(2, 59, 2);
+}
+.nagito_tras p {
+  color: white;
+}
+.chiaki_frente {
+  background-image: url(chiaki.png);
+}
+.chiaki_tras:hover {
+  background-color: pink;
+}
+.peko_frente {
+  background-image: url(peko.png);
+}
+.peko_tras:hover {
+  background-color: rgb(66, 85, 66);
+}
+.peko_tras p {
+  color: white;
+}
+.fuyuhiko_frente {
+  background-image: url(fuyuhiko.png);
+}
+.fuyuhiko_tras:hover {
+  background-color: rgb(172, 49, 49);
+}
+.mahiru_frente {
+  background-image: url(mahiru.png);
+}
+.mahiru_tras:hover {
+  background-color: rgb(201, 40, 40);
+}
+.hiyoko_frente {
+  background-image: url(hiyoko.png);
+}
+.hiyoko_tras:hover {
+  background-color: orange;
+}
+.mikan_frente {
+  background-image: url(mikan.png);
+}
+.mikan_tras:hover {
+  background-color: purple;
+}
+.ibuki_frente {
+  background-image: url(ibuki.png);
+}
+.ibuki_tras:hover {
+  background-color: rgb(189, 21, 189);
+}
+.tanaka_frente {
+  background-image: url(tanaka.png);
+}
+.tanaka_tras:hover {
+  background-color: rgb(119, 50, 119);
+}
+.sonia_frente {
+  background-image: url(Sonia_nevermind.png);
+}
+.sonia_tras:hover {
+  background-color: rgba(156, 156, 39, 0.678);
+}
+.soda_frente {
+  background-image: url(Kazuichi_personagens.png);
+}
+.soda_tras:hover {
+  background-color: yellow;
+}
+.nekomaru_frente {
+  background-image: url(nekomsru.png);
+}
+.nekomaru_tras:hover {
+  background-color: rgb(39, 139, 185);
+}
+.akane_frente {
+  background-image: url(akane.png);
+}
+.akane_tras:hover {
+  background-color: red;
+}
+.teruteru_frente {
+  background-image: url(teruteru.png);
+}
+.teruteru_tras:hover {
+  background-color: darkred;
+}
+.impostor_frente {
+  background-image: url(impostor.png);
+}
+.impostor_tras:hover {
+  background-color: rgb(168, 92, 92);
+}
+@media (max-width: 1024px) {
+  .part1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .part1 img {
+    width: 90%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .tras p {
+    font-size: 15px;
+  }
+}
